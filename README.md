@@ -21,6 +21,16 @@ To build the application in production mode, run:
 
 Open [http://localhost:8080/dev-login](http://localhost:8080/dev-login) and follow instructions.
 
+### Spotless
+
+```bash
+./mvnw spotless:check
+```
+
+```bash
+./mvnw spotless:apply
+```
+
 ## Screenshots
 
 ![items page](docs/localhost_8080_items.png "Items")

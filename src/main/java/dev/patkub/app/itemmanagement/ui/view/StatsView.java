@@ -26,16 +26,13 @@ public class StatsView extends Main {
         var priceFormatter = new DecimalFormat("$ #,##0.00");
 
         statsGrid = new Grid<>();
-        statsGrid.setItems(
-                new Stat("Profit", Optional.of(this.itemService.totalPrice()).map(priceFormatter::format).orElse("$0.00"))
-        );
+        statsGrid.setItems(new Stat("Profit",
+                Optional.of(this.itemService.totalPrice()).map(priceFormatter::format).orElse("$0.00")));
         statsGrid.addColumn(Stat::getName).setHeader("Statistic");
-        statsGrid.addColumn(item -> Optional.of(item.getValue()).orElse("Unknown"))
-                .setHeader("Value");
+        statsGrid.addColumn(item -> Optional.of(item.getValue()).orElse("Unknown")).setHeader("Value");
         statsGrid.setSizeFull();
 
         add(statsGrid);
     }
-
 
 }

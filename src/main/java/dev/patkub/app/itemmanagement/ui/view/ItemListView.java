@@ -72,7 +72,7 @@ public class ItemListView extends Main {
         itemGrid.addColumn(item -> Optional.ofNullable(item.getListedDate()).map(dateFormatter::format).orElse("Never"))
                 .setHeader("Listed Date");
         itemGrid.addColumn(item -> Optional.ofNullable(item.getPrice()).map(priceFormatter::format).orElse("$0.00"))
-            .setHeader("Price");
+                .setHeader("Price");
         itemGrid.setSizeFull();
 
         setSizeFull();

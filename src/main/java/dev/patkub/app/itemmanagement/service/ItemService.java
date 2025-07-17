@@ -41,8 +41,7 @@ public class ItemService {
 
     @Transactional(readOnly = true)
     public Double totalPrice() {
-        double sum = itemRepository.findAll().stream()
-                .map(Item::getPrice)
+        double sum = itemRepository.findAll().stream().map(Item::getPrice)
                 // Filter out null values
                 .filter(Objects::nonNull)
                 // Map to primitive double
