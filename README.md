@@ -1,6 +1,10 @@
 # Store Inventory App README
 
-- [ ] TODO Replace or update this README with instructions relevant to your application
+## Features
+- Vaadin
+- Total profit statistic
+
+## Running the App
 
 To start the application in development mode, import it into your IDE and run the `Application` class. 
 You can also start the application from the command line by running: 
@@ -15,9 +19,10 @@ To build the application in production mode, run:
 ./mvnw -Pproduction package
 ```
 
-## Getting Started
+Open [http://localhost:8080/dev-login](http://localhost:8080/dev-login) and follow instructions.
 
-The [Getting Started](https://vaadin.com/docs/latest/getting-started) guide will quickly familiarize you with your new
-Store Inventory App implementation. You'll learn how to set up your development environment, understand the project 
-structure, and find resources to help you add muscles to your skeleton — transforming it into a fully-featured 
-application.
+## Screenshots
+
+![items page](docs/localhost_8080_items.png "Items")
+
+![stats page](docs/localhost_8080_stats.png "Stats")

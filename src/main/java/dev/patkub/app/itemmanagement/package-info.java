@@ -11,5 +11,4 @@
  * directly to the application package.
  * </p>
  */
-package dev.patkub.app.taskmanagement;
-// TODO Remove this package once you have added real features
+package dev.patkub.app.itemmanagement;

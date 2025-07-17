@@ -6,6 +6,6 @@
  * </p>
  */
 @NullMarked
-package dev.patkub.app.taskmanagement.service;
+package dev.patkub.app.itemmanagement.service;
 
 import org.jspecify.annotations.NullMarked;
